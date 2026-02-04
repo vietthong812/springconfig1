@@ -1,0 +1,16 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/ 
+  instance:
+    prefer-ip-address: true
+server:
+ port: 8082
+spring:
+  datasource:
+    url: jdbc:mariadb://mariadb-journal:3306/journal_db
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
